@@ -19,3 +19,16 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+nextjs-portal {
+  display: none;
+}
+
+.like-to-stay::placeholder {
+  background: url("../assets/Icons/search.svg") no-repeat left center;
+  padding-left: 20px; /* Adjust based on icon size */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
