@@ -36,7 +36,7 @@ export default function Main() {
       </div>
       <Image
         src={forestImage}
-        objectFit="contain"
+        style={{objectFit:"cover"}}
         className="h-screen absolute -z-20 bg-black"
         alt="Picture of the author"
       />

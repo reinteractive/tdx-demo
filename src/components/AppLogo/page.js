@@ -6,6 +6,7 @@ export default function AppLogo() {
      <Image
         src={MainLogo}
         width={106}
+        priority
         className="pt-[69px] pb-[24px]"
         alt="app-logo"
       />

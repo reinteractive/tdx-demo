@@ -5,11 +5,12 @@ import "./page.scss";
 import ChevronRight from '@assets/Icons/chevron_right.svg';
 import dayjs from 'dayjs';
 import Image from 'next/image';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams, useRouter } from 'next/navigation';
 
 const {RangePicker} = DatePicker
 
 export default function BookingDetailsForm() {
+  const router = useRouter();
   const searchParams = useSearchParams();
   const searchPlace = searchParams.get('location');
   const labelCss = "text-[#929292] !pb-[6px]";
@@ -17,7 +18,7 @@ export default function BookingDetailsForm() {
   const customFormat = (value) => value.format("ddd, DD MMM");
 
   const onFinish = (values) => {
-    console.log('Success:', values);
+    router.push('/booking_confirmation')
   };
 
   const onFinishFailed = (errorInfo) => {
@@ -70,6 +71,7 @@ export default function BookingDetailsForm() {
               src={ChevronRight}
               width={7}
               height={13}
+              style={{width: 'auto', height: 'auto'}}
               alt="chevron-right"
             />
           }
@@ -91,6 +93,7 @@ export default function BookingDetailsForm() {
               src={ChevronRight}
               width={7}
               height={13}
+              style={{width: 'auto', height: 'auto'}}
               alt="chevron-right"
             />
           }
@@ -125,6 +128,7 @@ export default function BookingDetailsForm() {
               src={ChevronRight}
               width={7}
               height={13}
+              style={{width: 'auto', height: 'auto'}}
               alt="chevron-right"
             />
           }

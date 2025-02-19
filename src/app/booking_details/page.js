@@ -8,7 +8,7 @@ import { useSearchParams, useRouter } from "next/navigation";
 export default function BookingDetails() {
   const router = useRouter();
   const params = useSearchParams();
-  console.log(params.get('place'))
+
   return(
     <div className="bg-[#1E1E1E] h-screen booking-details relative">
       <div className="pt-[65px] px-[20px]">
@@ -17,6 +17,7 @@ export default function BookingDetails() {
             src={ArrowRight}
             width={12}
             height={8}
+            style={{width: 'auto', height: 'auto'}}
             className="rotate-180 cursor-pointer"
             alt="arrow-right"
           />
