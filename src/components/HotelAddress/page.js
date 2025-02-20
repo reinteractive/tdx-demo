@@ -1,11 +1,11 @@
 import Image from "next/image";
 import DirectionIcon from '@assets/Icons/icon_map.svg';
 
-export default function HotelAddress({withMap=false}) {
+export default function HotelAddress({withMap=true}) {
   return(
     <div>
       <div className='flex flex-row justify-between items-center'>
-        <div className='text-[16px] leading-[22px] font-medium'>761 Post Street <br />San Francisco, CA, USA, 94109</div>
+        <div className='text-[16px] leading-[22px] font-medium text-white'>761 Post Street <br />San Francisco, CA, USA, 94109</div>
         <Image
           src={DirectionIcon}
           className='cursor-pointer'

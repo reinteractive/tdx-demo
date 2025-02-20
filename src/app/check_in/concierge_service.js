@@ -21,16 +21,18 @@ export default function ConciergeService() {
     <div>
       <div className="font-semibold text-white text-[26px] leading-[30px] pb-2">Concierge Service</div>
       <div className="font-regular text-white text-[14px] leading-[18px] pb-4">Would you like us to book an Uber for you?</div>
-      <ButtonSwitch
-        switches={bookUberSwitchDetail}
-        onPress={(value) => setBookUber(value)}
-        selectedValue={bookUber}
-      />
+      <div className="pb-2">
+        <ButtonSwitch
+          switches={bookUberSwitchDetail}
+          onPress={(value) => setBookUber(value)}
+          selectedValue={bookUber}
+        />
+      </div>
 
       {
         bookUber === 'yes' &&
           <div>
-            <div className="p-4 bg-[#303030] flex flex-col gap-4 mt-2 rounded-[4px]">
+            <div className="p-4 bg-[#303030] flex flex-col gap-4 rounded-[4px]">
               <div>
                 <div className="text-[#929292] font-medium font-[13px] leading-[13px]">PICKUP TIME</div>
                 <div className="font-regular text-[14px] leading-[16px] text-white pt-2">13:50 PM</div>
@@ -44,11 +46,11 @@ export default function ConciergeService() {
                 <div className="font-regular text-[14px] leading-[16px] text-white pt-2">761 Post Street, San Francisco, CA, 94109</div>
               </div>
             </div>
-            <Divider style={{ borderColor: '#484848' }}></Divider>
           </div>
       }
+      <Divider style={{ borderColor: '#484848' }}></Divider>
       <div className="pb-6">
-        <div className="font-regular text-[14px] leading-[18px] pb-4">Based on your previous stays, we have arranged these for you. Deselect the option if you don’t require it.</div>
+        <div className="font-regular text-[14px] leading-[18px] pb-4 text-white">Based on your previous stays, we have arranged these for you. Deselect the option if you don’t require it.</div>
         <div className="space-y-4">
           <ButtonSwitch
             title="WAKE-UP CALL"

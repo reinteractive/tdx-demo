@@ -16,7 +16,7 @@ export default function CheckIn() {
         description="Your room based on your last stay with us. Premium King Suite."
       />
       <div className="pt-3">
-        <HotelAddress showMap={false} />
+        <HotelAddress withMap={false} />
       </div>
       <Button onClick={() => router.push('get_digital_key')} className='w-full text-[14px] leading-[22px] !mt-4 !bg-white !text-black !py-[8px] !font-semibold !rounded-full' type="primary" htmlType="submit">
         Check-in and Get Digital Key

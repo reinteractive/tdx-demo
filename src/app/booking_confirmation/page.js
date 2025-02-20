@@ -30,7 +30,7 @@ export default function BookingConfirmation() {
         <div className='flex flex-col gap-2'>
           <div className='font-medium text-[13px] leading-[13px] text-[#929292]'>FROM</div>
           <div>
-            <span className='font-medium text-[22px] leading-[14px] pr-2'>$340</span><span className='text-[13px] leading-[14px] font-[400]'>USD / Night</span>
+            <span className='font-medium text-[22px] leading-[14px] pr-2 text-white'>$340</span><span className='text-[13px] leading-[14px] font-[400] text-white'>USD / Night</span>
           </div>
         </div>
         <Button
