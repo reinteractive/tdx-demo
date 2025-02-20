@@ -37,11 +37,11 @@ export default function ConciergeService() {
               </div>
               <div>
                 <div className="text-[#929292] font-medium font-[13px] leading-[13px]">FROM</div>
-                <div className="font-regular text-[14px] leading-[16px] text-white pt-2">San Francisco Airport, San Francisco, CA 94128, USA</div>
+                <div className="font-regular text-[14px] leading-[16px] text-white pt-2">San Francisco Airport</div>
               </div>
               <div>
                 <div className="text-[#929292] font-medium font-[13px] leading-[13px]">TO</div>
-                <div className="font-regular text-[14px] leading-[16px] text-white pt-2">540 Michigan Ave, Chicago, IL 60611, USA</div>
+                <div className="font-regular text-[14px] leading-[16px] text-white pt-2">761 Post Street, San Francisco, CA, 94109</div>
               </div>
             </div>
             <Divider style={{ borderColor: '#484848' }}></Divider>
