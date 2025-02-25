@@ -4,6 +4,7 @@ import HotelAddress from "@/components/HotelAddress/page";
 import { Button, Divider } from "antd";
 import { useRouter } from "next/navigation";
 import ReservationStatus from "@/components/ReservationStatus/page";
+import StayInformation from "@/components/StayInformation/page";
 
 
 export default function BookingSuccess() {
@@ -20,14 +21,7 @@ export default function BookingSuccess() {
           status="Your all booked!"
           description="Your room based on your last stay with us. Premium King Suite."
         />
-        <div className="pt-5">
-          <div className="font-medium text-[13px] leading-[13px] text-[#929292] pb-2">STAY INFORMATION</div>
-          <div className="font-normal text-[14px] leading-6 text-white flex flex-col gap-2">
-            <div>6 - 7 Mar 2025 (1 Nights)</div>
-            <div>1 Room, 1 Guest</div>
-            <div>Deluxe Queen, Premium King Suite, City view</div>
-          </div>
-        </div>
+        <StayInformation />
         <Divider style={{ borderColor: '#484848' }}></Divider>
         <HotelAddress />
         <Divider style={{ borderColor: '#484848' }}></Divider>
