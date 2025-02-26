@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image";
-import forestImage from "../assets/Images/beautiful-waterfall.png";
+import forestImage from "../assets/Images/beautiful-waterfall.jpg";
 import { useRouter } from "next/navigation";
 import { Button, Input } from "antd";
 import AppLogo from "@components/AppLogo/page";
